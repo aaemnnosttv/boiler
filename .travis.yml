@@ -15,6 +15,7 @@ install: composer install
 
 before_script:
   - composer lint
-  - bash tests/bin/install-wp-tests.sh wp_tests travis ''
+  - mysql -u root -e "GRANT ALL PRIVILEGES ON wp_tests.* TO wp IDENTIFIED BY 'password';"
+  - bash tests/bin/install-wp-tests.sh wp_tests wp password
 
 script: composer test
