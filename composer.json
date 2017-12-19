@@ -32,7 +32,7 @@
         "symfony/yaml": "^2.1"
     },
     "scripts": {
-        "lint": "vendor/bin/phpcs",
-        "test": "vendor/bin/phpunit"
+        "lint": "phpcs",
+        "test": "phpunit"
     }
 }
