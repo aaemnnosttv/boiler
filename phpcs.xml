@@ -11,6 +11,7 @@
   <!-- Ignore 3rd-party dependencies -->
   <exclude-pattern>vendor/</exclude-pattern>
   <exclude-pattern>wordpress/</exclude-pattern>
+  <exclude-pattern>tests/wp-config.php</exclude-pattern>
 
   <!-- Show colors in console -->
   <arg value="-colors"/>
