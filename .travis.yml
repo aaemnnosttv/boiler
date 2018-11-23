@@ -12,12 +12,12 @@ env:
     - WP_DB_NAME=wp_tests
     - WP_VERSION=*
 
+# Test oldest supported PHP against oldest supported WP
+# Support for PHPUnit 6 was not added until 4.8
 matrix:
   include:
-    - php: 7.2
-      env: WP_VERSION=4.8.0
     - php: 7.0
-      env: WP_VERSION=4.4.0
+      env: WP_VERSION=4.8.0
 
 install:
   - composer validate --strict
