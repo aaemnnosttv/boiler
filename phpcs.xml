@@ -8,8 +8,9 @@
   <!-- Scan only PHP files -->
   <arg name="extensions" value="php"/>
 
-  <!-- Ignore Composer dependencies -->
+  <!-- Ignore 3rd-party dependencies -->
   <exclude-pattern>vendor/</exclude-pattern>
+  <exclude-pattern>wordpress/</exclude-pattern>
 
   <!-- Show colors in console -->
   <arg value="-colors"/>
